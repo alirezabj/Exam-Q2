@@ -10,9 +10,9 @@ Polymorphism is used in the try-catch structure. Even though both specific excep
 
 ### B)
 
-The code does not work because the `BookPriceCalculator` class returns an Object from `calculatePrice` but `DiscountedBookPriceCalculator` overrides it with a return type of Double. In Java, when overriding a method, the return type must be the same or a subclass of the original return type. Since Double is not a direct subclass of Object, the method override is invalid. 
+The code does not work because the `BookPriceCalculator` class returns an object from `calculatePrice` but `DiscountedBookPriceCalculator` overrides it with a return type of double. In Java, when overriding a method, the return type must be the same or a subclass of the original return type. Since Double is not a direct subclass of object, the method override is invalid. 
 
 
 ##### Advantages and Disadvantages:
 
-One benifit of the code is that the `BookPriceCalculator` class keeps all pricing rules in one place, making it easy to update or modify (Encapsulation). It also allows subclasses like `DiscountedBookPriceCalculator` to modify pricing rules, such as adding discounts. However, the major drawback is that the subclass changes the return type from Object to Double, which is not allowed in Java and causes a compilation error.
+One benifit of the code is that the `BookPriceCalculator` class keeps all pricing rules in one place, making it easy to update or modify (Encapsulation). It also allows subclasses like `DiscountedBookPriceCalculator` to modify pricing rules, such as adding discounts. However, the major drawback is that the subclass changes the return type from object to double, which is not allowed in Java and causes a compilation error.
