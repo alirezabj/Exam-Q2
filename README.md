@@ -10,7 +10,8 @@ Polymorphism is used in the try-catch structure. Even though both specific excep
 
 ### B)
 
-The code does not work because the `BookPriceCalculator` class returns an Object from `calculatePrice` but `DiscountedBookPriceCalculator` overrides it with a return type of Double. In Java, when overriding a method, the return type must be the same or a subclass of the original return type. Since Double is not a direct subclass of Object, the method override is invalid. To fix this, both methods should return Double instead of Object.
+The code does not work because the `BookPriceCalculator` class returns an Object from `calculatePrice` but `DiscountedBookPriceCalculator` overrides it with a return type of Double. In Java, when overriding a method, the return type must be the same or a subclass of the original return type. Since Double is not a direct subclass of Object, the method override is invalid. 
+
 
 ##### Advantages and Disadvantages:
 
